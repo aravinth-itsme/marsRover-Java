@@ -1,4 +1,3 @@
-
 class Process extends Rover
 {
 	public Process(){
@@ -13,8 +12,7 @@ class Process extends Rover
 		
 		for(int i=0; i < actions.length(); i++){
 			analyzeRoverActions(actions.charAt(i));
-		}
-		
+		}		
 		super.result();
 	}
 	
@@ -28,6 +26,5 @@ class Process extends Rover
 			case "M":
 				super.move(); break;
 		}
-	}
-	
+	}	
 }

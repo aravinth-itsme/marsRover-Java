@@ -1,4 +1,3 @@
-
 import java.util.*;
 import plateau.Plateau;
 
@@ -12,7 +11,6 @@ public class Rover
 	String a[] = {"N","E","S","W"};
 	
 	void findDirection(){
-
 		Map<Integer, String> dir = new HashMap<Integer, String>();	
 		dir.put(1,"N");
 		dir.put(2,"E");
@@ -42,7 +40,9 @@ public class Rover
 		CurrentDirection = (CurrentDirection == 4 ) ? 1 : (CurrentDirection + 1);
 		direction = a[CurrentDirection-1];
 	}
-	void move(){ findDirection();
+	
+	void move(){
+		findDirection();
 		if(CurrentDirection == 1) // N
 			y++;
 		if(CurrentDirection == 2) // E
@@ -58,7 +58,5 @@ public class Rover
 			System.out.println("Final Position: "+ x + " " + y + " " + direction);
 		else
 			System.out.println("Rover exceeds the size of the plateau.");
-	}
-	
-	
+	}	
 }

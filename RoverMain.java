@@ -1,13 +1,11 @@
-
-
 import java.util.Scanner;
 import plateau.Plateau;
 
 public class RoverMain extends Process
 {
-	public static void main(String ar[]){		
-		
-		Scanner sc = new Scanner(System.in);
+	public static void main(String ar[])
+	{		
+		Scanner sc = new Scanner(System.in);		
 		System.out.println("Enter Size of the Plateau: ");
 		int px = sc.nextInt();
 		int py = sc.nextInt();
@@ -19,9 +17,7 @@ public class RoverMain extends Process
 		String direction = sc.next();
 		
 		System.out.println("Enter Rovers activity: ");
-		String actions = sc.next();
-		
-		Process p = new Process(x,y,direction,actions);
-		
+		String actions = sc.next();		
+		Process p = new Process(x,y,direction,actions);		
 	}
 }
